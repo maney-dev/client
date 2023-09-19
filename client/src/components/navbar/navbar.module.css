@@ -1,0 +1,100 @@
+.container{
+    padding: 0.5rem 1rem;
+    height: 95px;
+    width: 100%;
+    border-bottom: 1px solid rgb(158, 138, 138);
+    background-color: rgb(249 115 22 );
+}
+
+.search{
+    
+    gap: 1rem/* 16px */;
+    background-color:white ;
+    display: flex; 
+    align-items: center;
+    padding-left: 0.5rem/* 8px */;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem;
+    border-radius: 0.5rem;
+    outline: none;
+    
+}
+
+.searchInput{
+    outline-style: none;
+    border-style: none;
+    opacity: 1;
+    color: rgb(34 34 34);
+    outline: none;
+    width: 90%;
+    
+}
+
+.classes.searchIcon{
+    color: black;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.title{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.wrapper > a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right > *{
+    cursor: pointer;
+}
+
+.right a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.username{
+    text-transform: capitalize;
+    cursor: default;
+}
+
+.logoutBtn:hover{
+   color: #666;
+   transition: 150ms all;
+}
+
+.cartContainer{
+    position: relative;
+    font-size: 18px;
+}
+
+.cartNumber{
+    position: absolute;
+    right: -0.75rem;
+    top: -0.75rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(58, 58, 224);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
