@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Hero from "../hero/Hero";
 import List from "../list/List";
 import classes from "./home.module.css";
 
@@ -25,6 +26,7 @@ const Home = () => {
 
   return (
     <div className={classes.container}>
+    <Hero/>
       {!error && <List products={products ? products : []} />}
       {error && <h1>No products or server is not responding</h1>}
     </div>

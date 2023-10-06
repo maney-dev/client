@@ -15,9 +15,10 @@
 }
 
 .productsContainer{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     gap: 30px;
     margin-top: 50px;
 }

@@ -7,7 +7,7 @@ const List = ({ products }) => {
     return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        {products?.length > 0 && <h1 className={classes.title}>Best products on the market</h1>}
+        {products?.length > 0 && <h1 className={classes.title}>Categories</h1>}
         <div className={classes.productsContainer}>
           {(products?.length === 0) ? (
             <h1 className={classes.noProductsMsg}>No products yet!</h1>
