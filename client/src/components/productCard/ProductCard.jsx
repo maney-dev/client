@@ -1,16 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './productCard.module.css'
-// import sunglasses1 from '../../assets/sunglasses1.avif'
+
 
 const ProductCard = ({ product }) => {
-    // const data = [
-    //     {id: crypto.randomUUID(), title: 'product 1', desc: 'best product', stars: 5, price: 99.99, photo: sunglasses},
-    //     {id: crypto.randomUUID(), title: 'product 1', desc: 'best product', stars: 5, price: 99.99, photo: sunglasses},
-    //     {id: crypto.randomUUID(), title: 'product 1', desc: 'best product', stars: 5, price: 99.99, photo: sunglasses},
-    //     {id: crypto.randomUUID(), title: 'product 1', desc: 'best product', stars: 5, price: 99.99, photo: sunglasses},
-    //     {id: crypto.randomUUID(), title: 'product 1', desc: 'best product', stars: 5, price: 99.99, photo: sunglasses},
-    //    ]
 
   return (
     <div className={classes.container}>

@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./navbar.module.css";
-import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineShoppingCart,} from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import Cart from "../cart/Cart";
 import { useDispatch, useSelector } from "react-redux";
 import {toggleShowCart} from '../../redux/cartSlice'
 import {logout } from "../../redux/authSlice";
+import SearchBar from "../searchBar/SearchBar";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -30,10 +31,11 @@ const Navbar = () => {
         <Link to={"/"} onClick={handleCloseCart} className={classes.left}>
           <h1 className={classes.title}>SenShop</h1>
         </Link>
-        <div className={classes.search}>
+        <SearchBar/>
+        {/* <div className={classes.search}>
           <input className={classes.searchInput} type="text" placeholder='Search...' />
           <AiOutlineSearch className={classes.searchIcon}/>
-        </div>
+        </div> */}
         <div className={classes.right}>
           <Link to="/create" className={classes.createBtn}>
             Create product

@@ -1,0 +1,37 @@
+.searchBar{
+    
+    gap: 1rem;
+    background-color:white ;
+    display: flex; 
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.5rem;
+    outline: none;
+    
+}
+.searchBar input{
+    font-size: 1.2rem;
+    outline-style: none;
+    border-style: none;
+    opacity: 1;
+    color: rgb(34 34 34);
+    outline: none;
+    width: 90%;
+}
+.classes.searchIcon{
+    color: black;
+}
+.search_results{
+    width: 100%;
+}
+.search_result{
+    border: 1px;
+    margin: .4rem 1rem;
+    padding: .4rem;
+}
+input:focus{
+    outline: none;
+}
