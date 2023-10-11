@@ -63,9 +63,10 @@
 }*/
 .icons a:hover{
     color: #1F252E;
-    background-color: #00E8F8;
-    box-shadow: 0 0 20px #00E8F8;
+    background-color: rgb(249 115 22);;
+    box-shadow: 0 0 20px rgb(249 115 22);;
     transition: all .3s ease-in-out;
-    border: 1.6px solid #00E8F8;
-    border-radius: 50%;
+    border: 1.6px solid rgb(249 115 22);;
+    border-radius: 100%;
+    height:fit-content;
 } 

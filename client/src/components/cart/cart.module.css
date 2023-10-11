@@ -86,7 +86,7 @@
   .checkoutBtn {
     margin: 1rem 0;
     text-decoration: none;
-    background-color: rgb(57, 57, 206);
+    background-color: rgb(249 115 22);
     color: #fff;
     border-radius: 12px;
     width: 175px;
@@ -100,9 +100,9 @@
   }
   
   .checkoutBtn:hover {
-    color: rgb(57, 57, 206);
+    color: rgb(249 115 22);
     background-color: #fff;
-    border-color: rgb(57, 57, 206);
+    border-color: rgb(249 115 22);
   }
   
   .resetCart {

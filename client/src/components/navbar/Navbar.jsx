@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./navbar.module.css";
-import { AiOutlineShoppingCart,} from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineUser,} from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import Cart from "../cart/Cart";
 import { useDispatch, useSelector } from "react-redux";
@@ -40,7 +40,10 @@ const Navbar = () => {
           <Link to="/create" className={classes.createBtn}>
             Create product
           </Link>
+          <div className={classes.user}>
+          <AiOutlineUser />
           <span className={classes.username}>{user?.username}</span>
+          </div>
           <span onClick={handleLogout} className={classes.logoutBtn}>Logout</span>
           <div
             className={classes.cartContainer}

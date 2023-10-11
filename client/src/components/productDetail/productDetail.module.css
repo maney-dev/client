@@ -63,7 +63,7 @@
   }
   
   .price {
-    color: rgb(59, 59, 216);
+    color: rgb(249 115 22);;
     font-size: 22px;
   }
   
@@ -104,7 +104,7 @@
     align-items: center;
     gap: 20px;
     padding: 0.5rem 1rem;
-    background-color: rgb(71, 71, 199);
+    background-color: rgb(249 115 22);;
     color: #fff;
     width: 200px;
     border-radius: 6px;
@@ -114,9 +114,9 @@
   }
   
   .addToCartBtn:hover {
-    border-color: rgb(71, 71, 199);
+    border-color: rgb(249 115 22);;
     background-color: #fff;
-    color: rgb(71, 71, 199);
+    color: rgb(249 115 22);;
     cursor: pointer;
   }
   
@@ -125,7 +125,7 @@
   }
   
   .cartIcon {
-    background-color: rgb(71, 71, 199);
+    background-color: rgb(249 115 22);;
   }
   
   .wishlistCompareBtns {
