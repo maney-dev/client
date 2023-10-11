@@ -1,5 +1,5 @@
 .searchBar{
-    
+    position: relative;
     gap: 1rem;
     background-color:white ;
     display: flex; 
@@ -34,4 +34,11 @@
 }
 input:focus{
     outline: none;
+}
+
+.searchResults {
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
 }
