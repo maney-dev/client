@@ -97,7 +97,7 @@
   .orderBtn{
       text-decoration: none;
       border: 1px solid transparent;
-      background-color: rgb(235, 170, 50);
+      background-color: rgb(249 115 22);
       color: #fff;
       position: absolute;
       left: 30vw;
@@ -112,6 +112,6 @@
   
   .orderBtn:hover{
       background-color: #fff;
-      border-color: rgb(235, 170, 50);
-      color: rgb(235, 170, 50);
+      border-color: rgb(249 115 22);
+      color: rgb(249 115 22);
   }

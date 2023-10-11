@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 import Checkout from './components/checkout/Checkout';
 import Final from './components/final/Final';
 import { HeadProvider, Title, Link, Meta } from 'react-head';
+import SearchBar from './components/searchBar/SearchBar';
 
 function App() {
   const {user} = useSelector((state) => state.auth)
@@ -29,6 +30,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={user ? <Home /> : <Login />} />
+        <Route path='/' element={user ? <Home /> : <SearchBar />} />
         <Route path='/login' element={user ? <Home /> : <Login />} />
         <Route path='/register' element={user ? <Home /> : <Register />} />
         <Route path='/cart' element={user ? <Cart /> : <Login />} />
