@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./list.module.css";
 import ProductCard from "../productCard/ProductCard";
+// import Head from 'react-slideshow-image'
 
 const List = ({ products }) => {
 

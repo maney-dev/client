@@ -1,12 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux'
 import Hero from "../hero/Hero";
 import List from "../list/List";
 import classes from "./home.module.css";
+import { setProducts } from "../../redux/productsSlice";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
+  const products = useSelector(state => state.products.all);
+  
+  const dispatch = useDispatch()
   const [error, setError] = useState("")
 
   useEffect(() => {
@@ -14,14 +18,15 @@ const Home = () => {
       try {
         const res = await fetch(`http://localhost:5000/product`);
         const data = await res.json();
-        console.log(data)
-        setProducts(data);
+    
+        dispatch(setProducts(data));
       } catch (error) {
         setError(prev => error)
         console.error(error);
       }
     };
     fetchProducts();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
