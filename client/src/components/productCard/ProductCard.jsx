@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className={classes.container}>
         <Link to={`/productDetail/${product._id}`} className={classes.wrapper}>
-            <img src={`http://localhost:5000/images/${product.firstImg}`} className={classes.productImg} alt="" />
+            <img src={`https://senshop.onrender.com/images/${product.firstImg}`} className={classes.productImg} alt="" />
             <div className={classes.productInfo}>
               <h2 className={classes.productTitle}>{product.title}</h2>
               <span className={classes.productPrice}><span>$</span>{Number(product?.price).toFixed(2)}</span>

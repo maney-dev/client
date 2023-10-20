@@ -19,7 +19,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/product/${id}`);
+        const res = await fetch(`https://senshop.onrender.com/product/${id}`);
         const data = await res.json();
         setProduct((prev) => data);
         setCurrentImage((prev) => data.firstImg);
