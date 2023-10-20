@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
         console.log(email, password)
-        const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/auth/login`, {
+        const res = await fetch(`https://vercel.com/youssoph-mane/senshopsn/auth/login`, {
             headers: {
                 'Content-Type': 'application/json'
             },

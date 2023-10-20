@@ -19,7 +19,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/product/${id}`);
+        const res = await fetch(`https://vercel.com/youssoph-mane/senshopsn/product/${id}`);
         const data = await res.json();
         setProduct((prev) => data);
         setCurrentImage((prev) => data.firstImg);
@@ -58,7 +58,7 @@ const ProductDetail = () => {
         <div className={classes.left}>
           <div className={classes.mainImgContainer}>
             <img
-              src={`http://localhost:5000/images/${currentImage}`}
+              src={`https://vercel.com/youssoph-mane/senshopsn/images/${currentImage}`}
               className={classes.mainImg}
               alt=""
             />
@@ -97,13 +97,13 @@ const ProductDetail = () => {
           )}
           <div className={classes.images}>
             <img
-              src={`http://localhost:5000/images/${product?.firstImg}`}
+              src={`https://vercel.com/youssoph-mane/senshopsn/images/${product?.firstImg}`}
               className={classes.firstPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.firstImg)}
             />
             <img
-              src={`http://localhost:5000/images/${product?.secondImg}`}
+              src={`https://vercel.com/youssoph-mane/senshopsn/images/${product?.secondImg}`}
               className={classes.secondPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.secondImg)}

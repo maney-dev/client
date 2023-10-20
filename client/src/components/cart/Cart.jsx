@@ -43,7 +43,7 @@ const Cart = () => {
                 <div key={product.id} className={classes.cartItem}>
                   <Link onClick={handleCloseCart} to={`/productDetail/${product.id}`}>
                     <img
-                      src={`https://sensational-swan-a0ad52.netlify.app/images/${product?.mainImg}`}
+                      src={`https://vercel.com/youssoph-mane/senshopsn/images/${product?.mainImg}`}
                       className={classes.img}
                       alt=""
                     />
