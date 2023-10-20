@@ -8,6 +8,7 @@
 .title{
     text-align: center;
     margin-top: 25px;
+    font-size: 40px;
 }
 .fadeImage{
     cursor: pointer;
@@ -15,28 +16,14 @@
     box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.9);
     padding: 1rem;
     position: relative; 
-    /* transition: 250ms all ease-in-out; */
-    width: 95%;
-    height: 745px;
+    transition: 250ms all ease-in-out;
+    width: 80%;
+    height: 800px;
     flex-wrap: wrap;
 }
 
-.diapo{
-    transition: all 1s;
-    display: inline-block;
-    position: relative;     /* pour servir de référent */
-}
-.diapo > * + * {    /* tous les enfants directs sauf le 1st */
-    transition: all 1s;
-    position: absolute;
-    top: 0;
-    left: 0;
-} 
-.diapo > :last-child {
-    opacity: 0;
-}
-
 .wrapper{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

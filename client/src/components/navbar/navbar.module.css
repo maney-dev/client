@@ -1,6 +1,6 @@
 .container{
     padding: 0.5rem 1rem;
-    height: 95px;
+    height: 110px;
     width: 100%;
     border-bottom: 1px solid rgb(158, 138, 138);
     background-color: rgb(249 115 22 );
@@ -49,6 +49,7 @@
     text-transform: capitalize;
 }
 
+
 .wrapper > a{
     text-decoration: none;
     color: inherit;
@@ -59,6 +60,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .right > *{
@@ -74,6 +77,9 @@
     text-transform: capitalize;
     cursor: default;
 }
+.username:hover{
+    color: rgb(128, 0, 255);
+}
 
 .logoutBtn:hover{
    color: #666;
@@ -82,7 +88,7 @@
 
 .cartContainer{
     position: relative;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .cartNumber{
