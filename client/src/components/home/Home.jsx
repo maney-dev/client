@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`https://vercel.com/youssoph-mane/senshopsn/product`);
+        const res = await fetch(`https://senshop.onrender.com/product`);
         const data = await res.json();
     
         dispatch(setProducts(data));

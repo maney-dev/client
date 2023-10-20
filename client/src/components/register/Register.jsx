@@ -20,7 +20,7 @@ const Register = () => {
     if (confirmPass !== password) return;
 
     try {
-      const res = await fetch(`https://vercel.com/youssoph-mane/senshopsn/auth/register`, {
+      const res = await fetch(`https://senshop.onrender.com/auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },
