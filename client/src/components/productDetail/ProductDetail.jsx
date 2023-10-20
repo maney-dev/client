@@ -19,7 +19,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`https://senshop.onrender.com/product/${id}`);
+        const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/product/${id}`);
         const data = await res.json();
         setProduct((prev) => data);
         setCurrentImage((prev) => data.firstImg);

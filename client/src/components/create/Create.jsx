@@ -39,19 +39,19 @@ const Create = () => {
         formData2.append("filename", filename2);
         formData2.append("secondImg", secondImg);
 
-        await fetch(`https://senshop.onrender.com/upload/firstImg`, {
+        await fetch(`https://sensational-swan-a0ad52.netlify.app/upload/firstImg`, {
           method: "POST",
           body: formData,
         });
 
-        await fetch(`https://senshop.onrender.com/upload/secondImg`, {
+        await fetch(`https://sensational-swan-a0ad52.netlify.app/upload/secondImg`, {
           method: "POST",
           body: formData2,
         });
       }
 
       // upload product and navigate to product
-      const res = await fetch("https://senshop.onrender.com/product", {
+      const res = await fetch("https://sensational-swan-a0ad52.netlify.app/product", {
         headers: {
           "Content-Type": "application/json",
         },

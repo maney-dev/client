@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
         console.log(email, password)
-        const res = await fetch(`https://senshop.onrender.com/auth/login`, {
+        const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/auth/login`, {
             headers: {
                 'Content-Type': 'application/json'
             },

@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`https://senshop.onrender.com/product`);
+        const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/product`);
         const data = await res.json();
     
         dispatch(setProducts(data));

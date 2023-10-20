@@ -20,7 +20,7 @@ const Register = () => {
     if (confirmPass !== password) return;
 
     try {
-      const res = await fetch(`https://senshop.onrender.com/auth/register`, {
+      const res = await fetch(`https://sensational-swan-a0ad52.netlify.app/auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },
