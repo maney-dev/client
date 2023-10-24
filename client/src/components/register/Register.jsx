@@ -85,10 +85,10 @@ const Register = () => {
           </Link>
         </form>
         {error && 
-           <div className={classes.errorMessage}>
-                Wrong credentials! Try different ones.
-            </div>
-            }
+          <div className={classes.errorMessage}>
+            Wrong credentials! Try different ones.
+          </div>
+        }
       </div>
     </div>
   );
