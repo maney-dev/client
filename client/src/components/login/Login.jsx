@@ -50,7 +50,7 @@ const Login = () => {
                     <input onChange={(e) => setPassword(e.target.value)} type="password" id='password' placeholder='Enter password'/>
                 </label>
                 <button className={classes.submitBtn}>Login</button>
-                <Link to="/register">Don't have an account? <p className={classes.register}>Register now</p></Link>
+                {/* <Link to="/register">Don't have an account? <p className={classes.register}>Register now</p></Link> */}
             </form>
             {error && 
            <div className={classes.errorMessage}>
