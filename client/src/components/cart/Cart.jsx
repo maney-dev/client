@@ -43,7 +43,7 @@ const Cart = () => {
                 <div key={product.id} className={classes.cartItem}>
                   <Link onClick={handleCloseCart} to={`/productDetail/${product.id}`}>
                     <img
-                      src={`https://senshop.onrender.com /images/${product?.mainImg}`}
+                      src={`https://senshop-sn.onrender.com/images/${product?.mainImg}`}
                       className={classes.img}
                       alt=""
                     />

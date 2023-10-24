@@ -18,9 +18,9 @@ const Register = () => {
     e.preventDefault();
 
     if (confirmPass !== password) return;
-
+    // https://senshop.onrender.com
     try {
-      const res = await fetch(`https://senshop.onrender.com/auth/register`, {
+      const res = await fetch(`https://senshop-sn.onrender.com/auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },

@@ -34,7 +34,7 @@ const Checkout = () => {
               <div key={product.id} className={classes.product}>
                 <Link to={`/productDetail/${product.id}`}>
                   <img
-                    src={`https://senshop.onrender.com/images/${product?.mainImg}`}
+                    src={`https://senshop-sn.onrender.com/images/${product?.mainImg}`}
                     className={classes.img}
                     alt=""
                   />

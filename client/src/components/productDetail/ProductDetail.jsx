@@ -97,13 +97,13 @@ const ProductDetail = () => {
           )}
           <div className={classes.images}>
             <img
-              src={`https://senshop.onrender.com/images/${product?.firstImg}`}
+              src={`https://senshop-sn.onrender.com/images/${product?.firstImg}`}
               className={classes.firstPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.firstImg)}
             />
             <img
-              src={`https://senshop.onrender.com/images/${product?.secondImg}`}
+              src={`https://senshop-sn.onrender.com/images/${product?.secondImg}`}
               className={classes.secondPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.secondImg)}
