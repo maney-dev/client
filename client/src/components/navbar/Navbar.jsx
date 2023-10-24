@@ -32,10 +32,6 @@ const Navbar = () => {
           <h1 className={classes.title}>SenShop</h1>
         </Link>
         <SearchBar/>
-        {/* <div className={classes.search}>
-          <input className={classes.searchInput} type="text" placeholder='Search...' />
-          <AiOutlineSearch className={classes.searchIcon}/>
-        </div> */}
         <div className={classes.right}>
           <Link to="/create" className={classes.createBtn}>
             Create product

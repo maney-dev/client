@@ -38,7 +38,7 @@
     outline: none;
     font-size: 18px;
     border: 1px solid transparent;
-    background-color: rgb(73, 73, 224);
+    background-color: #f97316;
     color: #fff;
     padding: 0.75rem 1rem;
     border-radius: 20px;
@@ -47,8 +47,8 @@
   
   .submitBtn:hover {
     background-color: #fff;
-    color: rgb(73, 73, 224);
-    border-color: rgb(73, 73, 224);
+    color: #f97316;
+    border-color: #f97316;
   }
   
   .errorMsg{

@@ -45,20 +45,21 @@
   .inputWrapperImgFirst span {
     display: inline-block;
     padding: 8px 16px;
-    background-color: teal;
+    background-color: #f97316;
     color: #fff;
     border: 1px solid transparent;
     cursor: pointer;
     transition: 150ms all;
     border-radius: 16px;
     margin: 0.1rem 2.5rem;
+    margin-left: 55px
   }
   
   .inputWrapperImgFirst span:hover {
     padding: 8px 16px;
     background-color: #fff;
-    color: teal;
-    border-color: teal;
+    color: #f97316;
+    border-color: #f97316;
   }
   
   .inputWrapperImgSecond {
@@ -71,21 +72,21 @@
   .inputWrapperImgSecond span {
     display: inline-block;
     padding: 8px 16px;
-    background-color: teal;
+    background-color: #f97316;
     color: #fff;
     border: 1px solid transparent;
     cursor: pointer;
     transition: 150ms all;
     border-radius: 16px;
     margin: 0.1rem 2.5rem;
-    margin-left: 1rem;
+    margin-left: 35px
   }
   
   .inputWrapperImgSecond span:hover {
     padding: 8px 16px;
     background-color: #fff;
-    color: teal;
-    border-color: teal;
+    color: #f97316;
+    border-color: #f97316;
   }
   
   .imageName{
@@ -123,7 +124,7 @@
   
   .submitBtn {
     width: 50%;
-    background-color: #cea600;
+    background-color: #f97316;
     color: #fff;
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
@@ -131,10 +132,11 @@
     cursor: pointer;
     transition: 150ms all;
     margin-top: 1rem;
+    margin-left: 30%;
   }
   
   .submitBtn:hover {
     background-color: #fff;
-    color: #cea600;
-    border-color: #cea600;
+    color: #f97316;
+    border-color: #f97316;
   }

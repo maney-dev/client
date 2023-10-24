@@ -39,19 +39,19 @@ const Create = () => {
         formData2.append("filename", filename2);
         formData2.append("secondImg", secondImg);
 
-        await fetch(`https://senshop.onrender.com/upload/firstImg`, {
+        await fetch(`http://localhost:5000/upload/firstImg`, {
           method: "POST",
           body: formData,
         });
 
-        await fetch(`https://senshop.onrender.com/upload/secondImg`, {
+        await fetch(`http://localhost:5000/upload/secondImg`, {
           method: "POST",
           body: formData2,
         });
       }
 
       // upload product and navigate to product
-      const res = await fetch("https://senshop.onrender.com/product", {
+      const res = await fetch("http://localhost:5000/product", {
         headers: {
           "Content-Type": "application/json",
         },

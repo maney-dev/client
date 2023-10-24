@@ -30,16 +30,16 @@ function App() {
       </HeadProvider>
       <Navbar />
       <Routes>
-        <Route path='/' element={user ? <Home /> : <Login />} />
+        <Route path='/' element={<Home />} />
         <Route path='/searchBar' element={user ? <Home /> : <SearchBar />} />
-        <Route path='/login' element={user ? <Home /> : <Login />} />
-        <Route path='/register' element={user ? <Home /> : <Register />} />
+        <Route path='/login' element={user ? <Login /> : <Login />} />
+        <Route path='/register' element={user ? <Login /> : <Register />} />
         <Route path='/cart' element={user ? <Cart /> : <Login />} />
-        <Route path='/checkout' element={user ? <Checkout /> : <Login />} />
-        <Route path='/final' element={user ? <Final /> : <Login />} />
+        <Route path='/checkout' element={user ? <Checkout /> : <Checkout />} />
+        <Route path='/final' element={user ? <Final /> : <Final />} />
         <Route path='/create' element={user ? <Create /> : <Login />} />
-        <Route path='/addressDetails' element={user ? <AddressPage /> : <Login />}/>
-        <Route path='/productDetail/:id' element={user ? <ProductDetail /> : <Login />} />
+        <Route path='/addressDetails' element={user ? <AddressPage /> : <AddressPage />}/>
+        <Route path='/productDetail/:id' element={user ? <ProductDetail /> : <ProductDetail />} />
       </Routes>
       <Footer />
     </>
