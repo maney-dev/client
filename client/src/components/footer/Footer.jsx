@@ -9,10 +9,10 @@ const Footer = () => {
       <div className={classes.wrapper}>
         <div className={classes.column}>
           <h2>FAQ</h2>
-          <span>Ce que nous vendons</span>
-          <span>Comment pouvez-vous commande</span>
-          <span>Quelle devise nous acceptons</span>
-          <span>Politique de confidentialité</span>
+          <span>What we sell</span>
+          <span>How can you order</span>
+          <span>Which design we accept</span>
+          <span>Privacy policy</span>
         </div>
         <div className={classes.column}>
           <h2>About</h2>

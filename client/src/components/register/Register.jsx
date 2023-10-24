@@ -20,7 +20,7 @@ const Register = () => {
     if (confirmPass !== password) return;
     // https://senshop.onrender.com
     try {
-      const res = await fetch(`https://senshop-sn.onrender.com/auth/register`, {
+      const res = await fetch(`https://cute-mermaid-ddfdb9.netlify.app/auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },

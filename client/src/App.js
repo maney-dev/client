@@ -29,9 +29,8 @@ import Register from "./components/register/Register";
 import AddressPage from "./components/addressPage/AddressPage";
 import { useSelector } from "react-redux";
 import Checkout from './components/checkout/Checkout';
-import Final from './components/final/Final';
-// import { HeadProvider, Title, Link, Meta } from 'react-head';
 import SearchBar from './components/searchBar/SearchBar';
+import Final from './components/final/Final';
 
 function App() {
    const {user} = useSelector((state) => state.auth)
@@ -40,16 +39,16 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/searchBar' element={user ? <Home /> : <SearchBar />} />
+        <Route path='/' element={<Home /> } />
         <Route path='/login' element={user ? <Home /> : <Login />} />
         <Route path='/register' element={user ? <Home /> : <Register />} />
-        <Route path='/searchBar' element={user ? <Home /> : <SearchBar />} />
-        <Route path='/cart' element={user ? <Cart /> : <Cart />} />
-        <Route path='/checkout' element={user ? <Checkout /> : <Checkout />} />
-        <Route path='/final' element={user ? <Final /> : <Final />} />
+        <Route path='/cart' element={ <Cart /> } />
+        <Route path='/checkout' element={<Checkout /> }/>
+        <Route path='/final' element={<Final />} />
         <Route path='/create' element={user ? <Create /> : <Login />} />
-        <Route path='/addressDetails' element={user ? <AddressPage /> : <AddressPage />}/>
-        <Route path='/productDetail/:id' element={user ? <ProductDetail /> : <ProductDetail />} />
+        <Route path='/addressDetails' element={<AddressPage />}/>
+        <Route path='/productDetail/:id' element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>
@@ -57,7 +56,6 @@ function App() {
 }
 
 export default App;
-
 // function App() {
 //   const {user} = useSelector((state) => state.auth)
 

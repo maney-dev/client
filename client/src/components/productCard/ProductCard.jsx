@@ -4,11 +4,11 @@ import classes from './productCard.module.css'
 
 
 const ProductCard = ({ product }) => {
-
+  // https://senshop-sn.onrender.com
   return (
     <div className={classes.container}>
         <Link to={`/productDetail/${product._id}`} className={classes.wrapper}>
-            <img src={`https://senshop-sn.onrender.com/images/${product.firstImg}`} className={classes.productImg} alt="" />
+            <img src={`https://cute-mermaid-ddfdb9.netlify.app/images/${product.firstImg}`} className={classes.productImg} alt="" />
             <div className={classes.productInfo}>
               <h2 className={classes.productTitle}>{product.title}</h2>
               <span className={classes.productPrice}><span>$</span>{Number(product?.price).toFixed(2)}</span>

@@ -19,7 +19,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`https://senshop.onrender.com/product/${id}`);
+        const res = await fetch(`https://cute-mermaid-ddfdb9.netlify.app/product/${id}`);
         const data = await res.json();
         setProduct((prev) => data);
         setCurrentImage((prev) => data.firstImg);
@@ -58,7 +58,7 @@ const ProductDetail = () => {
         <div className={classes.left}>
           <div className={classes.mainImgContainer}>
             <img
-              src={`https://senshop.onrender.com/images/${currentImage}`}
+              src={`https://cute-mermaid-ddfdb9.netlify.app/images/${currentImage}`}
               className={classes.mainImg}
               alt=""
             />
@@ -97,13 +97,14 @@ const ProductDetail = () => {
           )}
           <div className={classes.images}>
             <img
-              src={`https://senshop-sn.onrender.com/images/${product?.firstImg}`}
+              src={`https://cute-mermaid-ddfdb9.netlify.app/images/${product?.firstImg}`}
               className={classes.firstPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.firstImg)}
             />
+            {/* https://senshop-sn.onrender.com */}
             <img
-              src={`https://senshop-sn.onrender.com/images/${product?.secondImg}`}
+              src={`https://cute-mermaid-ddfdb9.netlify.app/images/${product?.secondImg}`}
               className={classes.secondPhoto}
               alt=""
               onClick={() => setCurrentImage((prev) => product?.secondImg)}

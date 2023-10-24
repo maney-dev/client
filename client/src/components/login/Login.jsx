@@ -17,7 +17,7 @@ const Login = () => {
     try {
         console.log(email, password)
         // https://senshop-sn.onrender.com
-        const res = await fetch(`https://senshop-sn.onrender.com/auth/login`, {
+        const res = await fetch(`https://cute-mermaid-ddfdb9.netlify.app/auth/login`, {
             headers: {
                 'Content-Type': 'application/json'
             },
