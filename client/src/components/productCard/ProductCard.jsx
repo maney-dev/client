@@ -8,7 +8,8 @@ const ProductCard = ({ product }) => {
   return (
     <div className={classes.container}>
         <Link to={`/productDetail/${product._id}`} className={classes.wrapper}>
-            <img src={`https://cute-mermaid-ddfdb9.netlify.app/images/${product.firstImg}`} className={classes.productImg} alt="" />
+        {/* https://cute-mermaid-ddfdb9.netlify.app */}
+            <img src={`http://localhost:5000/images/${product.firstImg}`} className={classes.productImg} alt="" />
             <div className={classes.productInfo}>
               <h2 className={classes.productTitle}>{product.title}</h2>
               <span className={classes.productPrice}><span>$</span>{Number(product?.price).toFixed(2)}</span>

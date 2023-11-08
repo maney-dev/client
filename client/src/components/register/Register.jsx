@@ -18,9 +18,9 @@ const Register = () => {
     e.preventDefault();
 
     if (confirmPass !== password) return;
-    // https://senshop.onrender.com
     try {
-      const res = await fetch(`https://cute-mermaid-ddfdb9.netlify.app/auth/register`, {
+      // https://cute-mermaid-ddfdb9.netlify.app
+      const res = await fetch(`http://localhost:5000/auth/register`, {
         headers: {
           "Content-Type": "application/json",
         },

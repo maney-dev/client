@@ -16,7 +16,8 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`https://cute-mermaid-ddfdb9.netlify.app/product`);
+        // https://cute-mermaid-ddfdb9.netlify.app
+        const res = await fetch(`http://localhost:5000/product`);
         const data = await res.json();
     
         dispatch(setProducts(data));

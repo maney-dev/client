@@ -38,20 +38,22 @@ const Create = () => {
         // for second img
         formData2.append("filename", filename2);
         formData2.append("secondImg", secondImg);
-        // https://senshop-sn.onrender.com
-        await fetch(`https://cute-mermaid-ddfdb9.netlify.app/upload/firstImg`, {
+        // https://cute-mermaid-ddfdb9.netlify.app/upload
+        
+        await fetch(`http://localhost:5000/upload/firstImg`, {
           method: "POST",
           body: formData,
         });
-
-        await fetch(`https://cute-mermaid-ddfdb9.netlify.app/upload/secondImg`, {
+        // https://cute-mermaid-ddfdb9.netlify.app/upload/secondImg
+        await fetch(`http://localhost:5000/upload/secondImg`, {
           method: "POST",
           body: formData2,
         });
       }
 
       // upload product and navigate to product
-      const res = await fetch("https://cute-mermaid-ddfdb9.netlify.app/product", {
+      // https://cute-mermaid-ddfdb9.netlify.app/product
+      const res = await fetch("http://localhost:5000/product", {
         headers: {
           "Content-Type": "application/json",
         },
